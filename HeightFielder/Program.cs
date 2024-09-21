@@ -1,7 +1,5 @@
 ﻿using AshDumpLib.HedgehogEngine;
 using Hexa.NET.DirectXTex;
-using Silk.NET.Core.Native;
-using Silk.NET.DXGI;
 using System.Runtime.InteropServices;
 
 public class Program
@@ -27,7 +25,7 @@ public class Program
                 Depth = 1,
                 ArraySize = 1,
                 MipLevels = 1,
-                Format = (int)Format.FormatR16Unorm,
+                Format = 56,
                 Dimension = TexDimension.Texture2D
             };
 
@@ -45,22 +43,22 @@ public class Program
                 }
             }
             string outputPath = filepath.Replace(".heightfield", ".dds");
-            SilkMarshal.ThrowHResult(DirectXTex.SaveToDDSFile(img.GetImages(), DDSFlags.None, outputPath));
+            DirectXTex.SaveToDDSFile(img.GetImages(), DDSFlags.None, outputPath);
 
-            img.Initialize2D((int)Format.FormatR8Unorm, metadata.Width, metadata.Height, metadata.ArraySize, metadata.MipLevels, CPFlags.None);
-            pixelPtr = (IntPtr)img.GetImages()->Pixels;
-            for (int y = 0; y < (int)metadata.Height - 2; y++)
-            {
-                for (int x = 0; x < (int)metadata.Width; x++)
-                {
-                    int index = (y * (int)metadata.Width + x);
-                    byte red = (byte)(hfd.MaterialData[(y * (int)metadata.Width + x)] * hfd.Materials.Count);
+            //img.Initialize2D(61, metadata.Width, metadata.Height, metadata.ArraySize, metadata.MipLevels, CPFlags.None);
+            //pixelPtr = (IntPtr)img.GetImages()->Pixels;
+            //for (int y = 0; y < (int)metadata.Height - 2; y++)
+            //{
+            //    for (int x = 0; x < (int)metadata.Width; x++)
+            //    {
+            //        int index = (y * (int)metadata.Width + x);
+            //        byte red = (byte)(hfd.MaterialData[(y * (int)metadata.Width + x)] * hfd.Materials.Count);
 
-                    Marshal.WriteByte(pixelPtr, index, red);
-                }
-            }
-            outputPath = filepath.Replace(".heightfield", "_material.dds");
-            SilkMarshal.ThrowHResult(DirectXTex.SaveToDDSFile(img.GetImages(), DDSFlags.None, outputPath));
+            //        Marshal.WriteByte(pixelPtr, index, red);
+            //    }
+            //}
+            //outputPath = filepath.Replace(".heightfield", "_material.dds");
+            //DirectXTex.SaveToDDSFile(img.GetImages(), DDSFlags.None, outputPath);
         }
         if(Path.GetExtension(filepath) == ".dds")
         {
