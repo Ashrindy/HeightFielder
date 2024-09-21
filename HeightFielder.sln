@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34525.116
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeightFielder", "HeightFielder\HeightFielder.csproj", "{CA10B0D9-004B-48F8-8302-CBA627583331}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HeightFielder", "HeightFielder\HeightFielder.csproj", "{CA10B0D9-004B-48F8-8302-CBA627583331}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AshDumpLib", "AshDumpLib\AshDumpLib\AshDumpLib.csproj", "{DC6E58CF-2213-4ACA-A963-1F7EEF15EB18}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Amicitia.IO", "AshDumpLib\Amicitia.IO\src\Amicitia.IO\Amicitia.IO.csproj", "{D5F5ACF5-BC30-404F-A779-0775B160717A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{CA10B0D9-004B-48F8-8302-CBA627583331}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CA10B0D9-004B-48F8-8302-CBA627583331}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CA10B0D9-004B-48F8-8302-CBA627583331}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC6E58CF-2213-4ACA-A963-1F7EEF15EB18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC6E58CF-2213-4ACA-A963-1F7EEF15EB18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC6E58CF-2213-4ACA-A963-1F7EEF15EB18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC6E58CF-2213-4ACA-A963-1F7EEF15EB18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5F5ACF5-BC30-404F-A779-0775B160717A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5F5ACF5-BC30-404F-A779-0775B160717A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5F5ACF5-BC30-404F-A779-0775B160717A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5F5ACF5-BC30-404F-A779-0775B160717A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
