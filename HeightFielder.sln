@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34525.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeightFielder", "HeightFielder\HeightFielder.csproj", "{CA10B0D9-004B-48F8-8302-CBA627583331}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CA10B0D9-004B-48F8-8302-CBA627583331}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA10B0D9-004B-48F8-8302-CBA627583331}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA10B0D9-004B-48F8-8302-CBA627583331}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA10B0D9-004B-48F8-8302-CBA627583331}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8CAB8224-F630-49D6-A765-C7038774AA6D}
+	EndGlobalSection
+EndGlobal
